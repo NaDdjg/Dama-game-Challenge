@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dama game Challenge</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body id="ht">
+    <!-- so the indexing of the classes starts from 1 and not 0 -->
+    <div class="checker white_checker" style="display:none"> </div>
+    <div class="checker black_checker" style="display:none"> </div>
+
+
+    <div class="square" style="display: none" id="ht"> </div>
+    <div class="black_background" id="black_background"> </div>
+
+    <div class="score" id="score">
+        <br>
+    </div>
+    <div class="table" id="table">
+
+        <div class="checker white_checker"> </div>
+        <div class="checker white_checker"> </div>
+        <div class="checker white_checker"> </div>
+        <div class="checker white_checker"> </div>
+        <div class="checker white_checker"> </div>
+        <div class="checker white_checker"> </div>
+        <div class="checker white_checker"> </div>
+        <div class="checker white_checker"> </div>
+        <div class="checker white_checker"> </div>
+        <div class="checker white_checker"> </div>
+        <div class="checker white_checker"> </div>
+        <div class="checker white_checker"> </div>
+
+        <div class="checker black_checker"> </div>
+        <div class="checker black_checker"> </div>
+        <div class="checker black_checker"> </div>
+        <div class="checker black_checker"> </div>
+        <div class="checker black_checker"> </div>
+        <div class="checker black_checker"> </div>
+        <div class="checker black_checker"> </div>
+        <div class="checker black_checker"> </div>
+        <div class="checker black_checker"> </div>
+        <div class="checker black_checker"> </div>
+        <div class="checker black_checker"> </div>
+        <div class="checker black_checker"> </div>
+
+
+        <div class="square black_square"> </div>
+        <div class="square white_square"> </div>
+        <div class="square black_square"> </div>
+        <div class="square white_square"> </div>
+        <div class="square black_square"> </div>
+        <div class="square white_square"> </div>
+        <div class="square black_square"> </div>
+        <div class="square white_square"> </div>
+        <div class="clear_float"> </div>
+
+        <div class="square white_square"> </div>
+        <div class="square black_square"> </div>
+        <div class="square white_square"> </div>
+        <div class="square black_square"> </div>
+        <div class="square white_square"> </div>
+        <div class="square black_square"> </div>
+        <div class="square white_square"> </div>
+        <div class="square black_square"> </div>
+        <div class="clear_float"> </div>
+
+        <div class="square black_square"> </div>
+        <div class="square white_square"> </div>
+        <div class="square black_square"> </div>
+        <div class="square white_square"> </div>
+        <div class="square black_square"> </div>
+        <div class="square white_square"> </div>
+        <div class="square black_square"> </div>
+        <div class="square white_square"> </div>
+        <div class="clear_float"> </div>
+
+        <div class="square white_square"> </div>
+        <div class="square black_square"> </div>
+        <div class="square white_square"> </div>
+        <div class="square black_square"> </div>
+        <div class="square white_square"> </div>
+        <div class="square black_square"> </div>
+        <div class="square white_square"> </div>
+        <div class="square black_square"> </div>
+        <div class="clear_float"> </div>
+
+        <div class="square black_square"> </div>
+        <div class="square white_square"> </div>
+        <div class="square black_square"> </div>
+        <div class="square white_square"> </div>
+        <div class="square black_square"> </div>
+        <div class="square white_square"> </div>
+        <div class="square black_square"> </div>
+        <div class="square white_square"> </div>
+        <div class="clear_float"> </div>
+
+        <div class="square white_square"> </div>
+        <div class="square black_square"> </div>
+        <div class="square white_square"> </div>
+        <div class="square black_square"> </div>
+        <div class="square white_square"> </div>
+        <div class="square black_square"> </div>
+        <div class="square white_square"> </div>
+        <div class="square black_square"> </div>
+        <div class="clear_float"> </div>
+
+        <div class="square black_square"> </div>
+        <div class="square white_square"> </div>
+        <div class="square black_square"> </div>
+        <div class="square white_square"> </div>
+        <div class="square black_square"> </div>
+        <div class="square white_square"> </div>
+        <div class="square black_square"> </div>
+        <div class="square white_square"> </div>
+        <div class="clear_float"> </div>
+
+        <div class="square white_square"> </div>
+        <div class="square black_square"> </div>
+        <div class="square white_square"> </div>
+        <div class="square black_square"> </div>
+        <div class="square white_square"> </div>
+        <div class="square black_square"> </div>
+        <div class="square white_square"> </div>
+        <div class="square black_square"> </div>
+        <div class="clear_float"> </div>
+
+    </div>
+
+    <!-- Documentation Section -->
+    <div id="documentation">
+        <h1>Dama Game Documentation</h1>
+        <p>Welcome to the Dama game! Learn how to play and enjoy.</p>
+
+        <h2>Objective</h2>
+        <p>The objective of the Dama game is to capture all of your opponent's pieces or block their moves.</p>
+
+        <h2>Game Rules</h2>
+        <ul>
+            <li>Each player starts with 12 pieces represented by circles.</li>
+            <li>Players take turns moving their pieces diagonally on the board.</li>
+            <li>You can capture your opponent's piece by jumping over it if the square behind is empty.</li>
+            <li>King pieces can move in any direction, while regular pieces can only move forward.</li>
+            <li>A piece becomes a king when it reaches the opponent's back row.</li>
+        </ul>
+        <div style="display: flex; justify-content: center; align-items: center; width: 100%;">
+            <p>Here's an image of the king piece in the Dama game:</p>
+            <img src="king_piece.png" alt="King Piece" class="king-piece">
+        </div>
+
+        <h2>Game Controls</h2>
+        <p>Use the mouse to click on your piece to select it and then click on a valid square to make a move. The game
+            enforces legal moves and captures.</p>
+
+        <h2>Winning the Game</h2>
+        <p>You win the game when your opponent can't make any legal moves or when you capture all of their pieces.</p>
+
+        <h2>Scoring</h2>
+        <p>A message will be displayed when the game ends, indicating the winner: "Black wins" or "White wins."</p>
+
+        <h2>Responsive Design</h2>
+        <p>The game board adjusts its size to fit the screen. On smaller screens, the board and pieces are scaled down
+            for better gameplay.</p>
+
+        <p class="special-message">
+            <em class="enjoy-text">Enjoy playing Dama!</em>
+        </p>
+    </div>
+
+    <script src="script.js"> </script>
+</body>
+
+</html>
